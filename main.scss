@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700&display=swap");
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.achivement__main__container {
+    padding: 3rem 2rem;
+    max-height: 100vh;
+    .achivment_main {
+        // border: 1px solid black;
+        border-radius: 1rem;
+        // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+        .achivment__main__heading {
+            margin: 0;
+            // border: 1px solid black;
+            padding: 0.5rem;
+            padding-bottom: 0;
+            text-align: center;
+            font-size: 2.1rem;
+            font-weight: 500;
+        }
+
+        .achivment__map__container {
+            // box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+            border: 1px solid rgba(0, 0, 0, 0.173);
+            border-radius: 0.5rem;
+            margin: 2rem 5vw;
+            padding: 1rem 0.5rem;
+
+            .map__container_heading {
+                margin: 0;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 400;
+                border-bottom: 1px solid black;
+                padding: 0.5rem;
+            }
+
+            .map__container__first_p {
+                text-align: center;
+                padding: 1rem;
+                margin: 0;
+            }
+
+            .map__contianer__first_ul {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 1rem;
+                padding-left: 0;
+
+                li {
+                    border: 1px solid rgba(0, 0, 0, 0.425);
+                    border-radius: 1rem;
+                    padding: 1rem 2rem;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: all 0.5s ease-in;
+
+                    &:hover {
+                        // background-color: rgb(249, 203, 203);
+                        // color: white;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .map__container__sec__ul {
+                padding-left: 0;
+                display: flex;
+                align-items: center;
+                list-style-type: none;
+                justify-content: space-around;
+                >:last-child{
+                    background-color: rgba(128, 128, 128, 0.556);
+                    border: 1px solid rgba(128, 128, 128, 0.556) ;
+                }
+
+                li {
+                    cursor: pointer;
+                    border: 1px solid rgba(0, 0, 0, 0.356);
+                    width: 100%;
+                    text-align: center;
+                    padding: 0.5rem;
+                    font-weight: 500;
+                }
+
+               
+            }
+
+            .map__container {
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:576px){
+    .achivement__main__container{
+        padding: 0;
+        max-height: auto;
+    }
+    .achivement__main__container .achivment_main .achivment__main__heading{
+        font-size: 20px;
+        padding: 11px 0;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container{
+        margin: 0.2rem 0;
+        padding: 0.5rem 0;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__container_heading{
+        font-size: 1.5rem;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__container__first_p{
+        font-size: 12px;
+        padding: 12PX 5PX;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__contianer__first_ul{
+        gap: 8px;
+        padding: 0 8px;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__contianer__first_ul li{
+        padding: 9px 7px;
+        font-size: 6px;
+        border-radius: 7px;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__contianer__first_ul li span{
+        font-size: 0.7rem ;
+        font-weight: 500;
+
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__container__sec__ul{
+        margin: 0;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__container__sec__ul li{
+        padding: 5px 0;
+    }
+   
+}
+@media only screen and (min-width:576px) and (max-width:768px){
+    .achivement__main__container{
+        padding: 0.8rem;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container{
+        margin: 1rem 2vw;
+        padding: 12px;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__contianer__first_ul li span{
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .achivement__main__container .achivment_main .achivment__map__container .map__contianer__first_ul li{
+        padding: 10px 7px;
+    font-size: 15px;
+    }
+}
